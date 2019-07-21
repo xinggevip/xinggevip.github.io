@@ -377,20 +377,46 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <h2 id="4-2设置签名"><a href="#4-2设置签名" class="headerlink" title="4.2设置签名"></a>4.2设置签名</h2><ul>
+<li><p>形式：</p>
+<p>用户名：tom</p>
+<p>Email地址:  <a href="mailto:1511844263@qq.com" target="_blank" rel="noopener">1511844263@qq.com</a></p>
+<p>作用：区分不同开发人员的身份</p>
+<p>辨析：这里设置的签名和登录远程库（代码托管中心）的账号、密码没有任何关系。</p>
+</li>
+<li><p>命令： </p>
+<ul>
+<li><p>项目级别/仓库级别：仅在当前本地库范围内有效</p>
+<ul>
+<li><p>git config user.name tom_pro</p>
+</li>
+<li><p>git config user.email <a href="mailto:1511844263_pro@qq.com" target="_blank" rel="noopener">1511844263_pro@qq.com</a></p>
+</li>
+<li><p>信息保存位置： ./.git/config</p>
+<p><img src="C:%5CUsers%5C15118%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563341091134.png" alt="1563341091134"></p>
+</li>
+</ul>
+</li>
+<li><p>系统用户级别：登录当前操作系统的用户范围</p>
+<ul>
+<li><p>git config –global user.name top_glb</p>
+</li>
+<li><p>git config –global user.email <a href="mailto:1511844263_pro@qq.com" target="_blank" rel="noopener">1511844263_pro@qq.com</a></p>
+<p><img src="C:%5CUsers%5C15118%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1563341844777.png" alt="1563341844777"></p>
+</li>
+</ul>
+</li>
+<li><p>级别优先级：</p>
+<ul>
+<li>就近原则：项目级别优先于系统级别，二者都有时采用项目级别的签名</li>
+<li>如果只有系统用户级别的签名，就以系统用户级别的签名为准</li>
+<li>二者都没有是不允许的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-3-添加提交以及查看状态的操作"><a href="#4-3-添加提交以及查看状态的操作" class="headerlink" title="4.3  添加提交以及查看状态的操作"></a>4.3  添加提交以及查看状态的操作</h2>
           
         
       
